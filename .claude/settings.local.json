@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx prisma generate:*)",
+      "Bash(npx prisma migrate:*)",
+      "Bash(npx prisma db push:*)",
+      "Bash(PRISMA_USER_CONSENT_FOR_DANGEROUS_AI_ACTION=\"YES\" npx prisma migrate reset:*)",
+      "Bash(psql \"postgresql://postgres:admin123@localhost:5432/tutallerdb\" -c \"DROP SCHEMA public CASCADE; CREATE SCHEMA public;\")",
+      "Bash(npm install:*)",
+      "Bash(cat:*)",
+      "Bash(psql:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm start)",
+      "Bash(lsof:*)",
+      "Bash(curl:*)",
+      "Bash(npx tsc:*)",
+      "Bash(next dev:*)",
+      "Bash(npx next dev -p 3001)",
+      "Bash(NEXT_DIST_DIR='.next-admin' npx next dev:*)",
+      "Bash(npx prisma db seed:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
